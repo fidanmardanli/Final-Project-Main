@@ -1,0 +1,418 @@
+
+.features {
+    overflow: hidden;
+    margin-top: -50px;
+  }
+  
+  .features .nav-tabs {
+    border: 0;
+  }
+  
+  .features .nav-link {
+    border: 0;
+    padding: 12px 15px 12px 0;
+    transition: 0.3s;
+    color: #556270;
+    border-radius: 0;
+    border-right: 2px solid white;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  
+  .features .nav-link:hover {
+    color: #d9232d;
+  }
+  
+  .features .nav-link.active {
+    color: #d9232d;
+    border-color: #d9232d;
+  }
+  
+  .features .tab-pane.active {
+    -webkit-animation: fadeIn 0.5s ease-out;
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  .features .details h3 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #556270;
+  }
+  
+  .features .details p {
+    color: #777777;
+  }
+  
+  .features .details p:last-child {
+    margin-bottom: 0;
+  }
+  
+  @media (max-width: 992px) {
+    .features .nav-link {
+      border: 0;
+      padding: 15px;
+    }
+  
+    .features .nav-link.active {
+      color: #fff;
+      background: #d9232d;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: #d9232d;
+  }
+  
+  a:hover {
+    color: #e24d55;
+    text-decoration: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Raleway", sans-serif;
+  }
+  
+
+  .portfolio .portfolio-item {
+    margin-bottom: 30px;
+  }
+  
+  .portfolio #portfolio-flters {
+    padding: 0;
+    margin: 0 auto 20px auto;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .portfolio #portfolio-flters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 15px 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #444444;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 3px;
+  }
+  
+  .portfolio #portfolio-flters li:hover,
+  .portfolio #portfolio-flters li.filter-active {
+    color: #fff;
+    background: #d9232d;
+  }
+  
+  .portfolio #portfolio-flters li:last-child {
+    margin-right: 0;
+  }
+  
+  .portfolio .portfolio-wrap {
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background: rgba(85, 98, 112, 0.6);
+  }
+  
+  .portfolio .portfolio-wrap::before {
+    content: "";
+    background: rgba(85, 98, 112, 0.6);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all ease-in-out 0.3s;
+    z-index: 2;
+    opacity: 0;
+  }
+  
+  .portfolio .portfolio-wrap img {
+    transition: all ease-in-out 0.3s;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-info {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-info h4 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-info p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    font-style: italic;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-links {
+    text-align: center;
+    z-index: 4;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-links a {
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0 5px 0 0;
+    font-size: 28px;
+    display: inline-block;
+    transition: 0.3s;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-links a:hover {
+    color: white;
+  }
+  
+  .portfolio .portfolio-wrap:hover::before {
+    opacity: 1;
+  }
+  
+  .portfolio .portfolio-wrap:hover img {
+    transform: scale(1.2);
+  }
+  
+  .portfolio .portfolio-wrap:hover .portfolio-info {
+    opacity: 1;
+  }
+  
+  /*--------------------------------------------------------------
+  # Portfolio Details
+  --------------------------------------------------------------*/
+  .portfolio-details {
+    padding-top: 40px;
+  }
+  
+  .portfolio-details .portfolio-details-slider img {
+    width: 100%;
+  }
+  
+  .portfolio-details .portfolio-details-slider .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    opacity: 1;
+    border: 1px solid #d9232d;
+  }
+  
+  .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #d9232d;
+  }
+  
+  .portfolio-details .portfolio-info {
+    padding: 30px;
+    box-shadow: 0px 0 30px rgba(85, 98, 112, 0.08);
+  }
+  
+  .portfolio-details .portfolio-info h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .portfolio-details .portfolio-info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
+  }
+  
+  .portfolio-details .portfolio-info ul li+li {
+    margin-top: 10px;
+  }
+  
+  .portfolio-details .portfolio-description {
+    padding-top: 30px;
+  }
+  
+  .portfolio-details .portfolio-description h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .portfolio-details .portfolio-description p {
+    padding: 0;
+  }
+
+
+  .contact .info {
+    width: 100%;
+    background: #fff;
+  }
+  
+  .contact .info i {
+    font-size: 20px;
+    color: #556270;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #edeff1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #556270;
+  }
+  
+  .contact .info p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #8795a4;
+  }
+  
+  .contact .info .email,
+  .contact .info .phone {
+    margin-top: 40px;
+  }
+  
+  .contact .info .email:hover i,
+  .contact .info .address:hover i,
+  .contact .info .phone:hover i {
+    background: #556270;
+    color: #fff;
+  }
+  
+  .contact .php-email-form {
+    width: 100%;
+    background: #fff;
+  }
+  
+  .contact .php-email-form .form-group {
+    padding-bottom: 8px;
+  }
+  
+  .contact .php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+  .contact .php-email-form .error-message br+br {
+    margin-top: 25px;
+  }
+  
+  .contact .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+  .contact .php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .contact .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+  }
+  
+  .contact .php-email-form input,
+  .contact .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+  
+  .contact .php-email-form input:focus,
+  .contact .php-email-form textarea:focus {
+    border-color: #d9232d;
+  }
+  
+  .contact .php-email-form input {
+    height: 44px;
+  }
+  
+  .contact .php-email-form textarea {
+    padding: 10px 12px;
+  }
+  
+  .contact .php-email-form button[type=submit] {
+    background: #d9232d;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+  }
+  
+  .contact .php-email-form button[type=submit]:hover {
+    background: #e24d55;
+  }
+  
+  @-webkit-keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }

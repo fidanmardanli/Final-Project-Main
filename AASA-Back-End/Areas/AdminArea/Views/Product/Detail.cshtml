@@ -1,0 +1,46 @@
+﻿@model Product
+
+@{
+    ViewData["Title"] = "Detail";
+    Layout = "~/Areas/AdminArea/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container-fluid my-3 mx-3">
+    <div class="table-responsive pt-3">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>
+                       Image
+                    </th>
+                    <th>
+                       Title
+                    </th>
+                    <th>
+                        Price
+                    </th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>
+                        @Model.Image
+
+                    </td>
+                    <td>
+                        @Model.Title
+                    </td>
+                    <td>
+                        350$
+                    </td>
+
+
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

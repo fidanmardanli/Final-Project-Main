@@ -1,0 +1,30 @@
+﻿@model Slider
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="container-fluid mx-5 my-3">
+    <h3>Slider Image</h3>
+    <form method="post" enctype="multipart/form-data" asp-action="Create">
+        <div class="form-group">
+            <input class="form-control" asp-for="ImageFirst">
+            <span class="text-danger" asp-validation-for="ImageFirst"></span>
+        </div>
+        <a class="btn btn-primary" asp-controller="Slider" asp-action="Index">Back</a>
+        <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+</div>
+
+@*<div class="container-fluid mx-5 my-3">
+    <h3>Slider Description</h3>
+    <form method="post" asp-controller="Slider" asp-action="Create">
+        <div class="form-group">
+            <input maxlength="" minlength="" type="text" class="form-control" asp-for="DescriptionFirst">
+            <span class="text-danger" asp-validation-for="DescriptionFirst"></span>
+        </div>
+        <a class="btn btn-primary" asp-controller="Slider" asp-action="Index">Back</a>
+        <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+</div>
+*@

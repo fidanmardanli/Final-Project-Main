@@ -1,0 +1,170 @@
+﻿@model ShopVM
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_ContactLayout.cshtml";
+}
+
+<!-- Start Portfolio -->
+<main id="main">
+
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+
+
+
+            <div class="row portfolio-container">
+                @foreach (var product in Model.Products)
+                {
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap" id="@product.TypeId">
+                            <img src="~/assets/img/@product.Image" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>@product.Title</h4>
+                                <p>350$</p>
+                                <div class="portfolio-links">
+                                    <form asp-controller="Shop" asp-action="AddBasket" asp-route-id="@product.Id" method="post">
+                                        <button class="btn btn-primary" type="submit"><i class="bx bx-plus"></i></button>
+                                    </form>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+   @*             <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/pexels-rodnae-productions-8474463.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Brown Area, Mars</h4>
+                            <p>200$</p>
+                            <div class="portfolio-links">
+                                <a href="assets/img/pexels-david-kopacz-4994765.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/pexels-cottonbro-studio-7166829.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Dark Area, Neptune</h4>
+                            <p>350$</p>
+                            <div class="portfolio-links">
+                                <a href="assets/img/pexels-tom-fisk-12519335.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/pexels-rodnae-productions-8474500.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Red Area, Mars</h4>
+                            <p>200$</p>
+                            <div class="portfolio-links">
+                                <a href="assets/img/pexels-quentin-pelletier-6641536.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/pexels-a-koolshooter-5258151.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Desert, Saturn</h4>
+                            <p>150$</p>
+                            <div class="portfolio-links">
+                                <a href="assets/img/pexels-pixabay-45208.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/pexels-cottonbro-studio-7170698.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Windy Area, Neptune</h4>
+                            <p>350$</p>
+                            <div class="portfolio-links">
+                                <a href="assets/img/pexels-tom-fisk-12674365.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/pexels-rodnae-productions-8474703.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Orange Area, Mars</h4>
+                            <p>200$</p>
+                            <div class="portfolio-links">
+                                <a href="assets/img/pexels-ingrid-north-14396590.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/pexels-a-koolshooter-5258251.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>City, Saturn</h4>
+                            <p>150$</p>
+                            <div class="portfolio-links">
+                                @*<a href=assets/img/pexels-anang-santoso-4826567.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>*@
+@*                                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+*@@*
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-wrap">
+                  
+                        <img src="~/assets/img/pexels-a-koolshooter-5258257.jpg" class="img-fluid" alt="">
+                      
+                        <div class="portfolio-info">
+                            <h4>Sandy, Saturn</h4>
+                            <p>150$</p>
+                            <div class="portfolio-links">
+                                <a href="assets/img/pexels-pixabay-355935.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/pexels-murat-esibatir-4355348.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Canyon, Neptune</h4>
+                            <p>350$</p>
+                            <div class="portfolio-links">
+                                <a href="assets/img/pexels-tom-fisk-12719813.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>*@
+
+
+            </div>
+
+        </div>
+    </section><!-- End Portfolio Section -->
+
+</main>
+<!-- End Portfolio-->

@@ -1,0 +1,169 @@
+﻿@model Portfolio
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container-fluid my-3 mx-3">
+    <div class="table-responsive pt-3">
+       
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>
+                        #
+                    </th>
+                     <th>
+                        Type
+                    </th>
+                    <th>
+                        Image
+                    </th>
+                    <th>
+                        Title
+                    </th>
+                    <th>
+                        Settings
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        Nebula
+                    </td>
+                    <td>
+                        <img src="~/assets/img/@Model.ImageFirst" />
+                    </td>
+                    <td>
+                      @Model.TitleFirst
+                    </td>
+                   
+                </tr>
+                <tr>
+                    <td>
+                        2
+                    </td>
+                    <td>
+                        Nebula
+                    </td>
+                    <td>
+                        <img src="~/assets/img/@Model.ImageThird" />
+                    </td>
+                    <td>
+                        @Model.TitleThird
+                    </td>
+                  
+                </tr>
+                <tr>
+                    <td>
+                        3
+                    </td>
+                    <td>
+                        Nebula
+                    </td>
+                    <td>
+                        <img src="~/assets/img/@Model.ImageSixth" />
+                    </td>
+                    <td>
+                        @Model.TitleSixth
+                    </td>
+                   
+                </tr>
+                <tr>
+                    <td>
+                        4
+                    </td>
+                    <td>
+                        Moon
+                    </td>
+                    <td>
+                        <img src="~/assets/img/@Model.ImageSecond" />
+                    </td>
+                    <td>
+                        @Model.TitleSecond
+                    </td>
+                   
+                </tr>
+                <tr>
+                    <td>
+                        5
+                    </td>
+                    <td>
+                        Moon
+                    </td>
+                    <td>
+                        <img src="~/assets/img/@Model.ImageFifth" />
+                    </td>
+                    <td>
+                        @Model.TitleFifth
+                    </td>
+                  
+                </tr>
+                <tr>
+                    <td>
+                        6
+                    </td>
+                    <td>
+                        Moon
+                    </td>
+                    <td>
+                        <img src="~/assets/img/@Model.ImageNinth" />
+                    </td>
+                    <td>
+                        @Model.TitleNinth
+                    </td>
+                  
+                </tr>
+                <tr>
+                    <td>
+                        7
+                    </td>
+                    <td>
+                        Earth
+                    </td>
+                    <td>
+                        <img src="~/assets/img/@Model.ImageFourth" />
+                    </td>
+                    <td>
+                        @Model.TitleFourth
+                    </td>
+                   
+                </tr>
+                <tr>
+                    <td>
+                        8
+                    </td>
+                    <td>
+                        Earth
+                    </td>
+                    <td>
+                        <img src="~/assets/img/@Model.ImageSeventh" />
+                    </td>
+                    <td>
+                        @Model.TitleSeventh
+                    </td>
+                  
+                </tr>
+                <tr>
+                    <td>
+                        9
+                    </td>
+                    <td>
+                        Earth
+                    </td>
+                    <td>
+                        <img src="~/assets/img/@Model.ImageEighth" />
+                    </td>
+                    <td>
+                        @Model.TitleEighth
+                    </td>
+                   
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

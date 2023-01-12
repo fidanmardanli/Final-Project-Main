@@ -1,0 +1,36 @@
+﻿
+@model LoginVM
+
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="text-danger" asp-validation-summary="All">
+        </div>
+
+        <div class="input-area">
+            <form asp-controller="Account" asp-action="Login" method="post" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label asp-for="UsernameOrEmail" class="form-label">Email or Username</label>
+                    <input class="form-control" asp-for="UsernameOrEmail">
+                    <span class="text-danger" asp-validation-for="UsernameOrEmail"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Password" class="form-label">Password</label>
+                    <input class="form-control" asp-for="Password">
+                    <span class="text-danger" asp-validation-for="Password"></span>
+                </div>
+             
+
+                <button type="submit" class="btn btn-primary">Log in</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+

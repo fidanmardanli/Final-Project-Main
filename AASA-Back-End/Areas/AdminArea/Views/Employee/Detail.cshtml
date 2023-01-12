@@ -1,0 +1,45 @@
+﻿@model Employee
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container-fluid my-3 mx-3">
+    <div class="table-responsive pt-3">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>
+                        Full Name
+                    </th>
+                    <th>
+                        Age
+                    </th>
+                    <th>
+                        Position
+                    </th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                
+                    <tr>
+                        <td>
+                                @Model.FullName
+
+                        </td>
+                        <td>
+                        @Model.Age
+                        </td>
+                        <td>
+                        @Model.Position
+                        </td>
+                        
+
+                        
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</div>
+

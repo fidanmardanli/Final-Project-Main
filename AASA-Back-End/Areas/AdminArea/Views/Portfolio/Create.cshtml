@@ -1,0 +1,16 @@
+﻿@model Portfolio
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/AdminArea/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="container-fluid mx-5 my-3">
+    <h3>Portfolio Title</h3>
+    <form method="post" asp-controller="Portfolio" asp-action="Create">
+        <div class="form-group">
+            <input maxlength="" minlength="" type="text" class="form-control" asp-for="TitleFirst">
+            <span class="text-danger" asp-validation-for="TitleFirst"></span>
+        </div>
+        <a class="btn btn-primary" asp-controller="Portfolio" asp-action="Index">Back</a>
+        <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+</div>

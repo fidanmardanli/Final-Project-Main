@@ -1,0 +1,182 @@
+﻿@model Slider
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- Start Banner Hero -->
+<div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1"></li>
+        <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="container">
+                <div class="row p-5">
+                    <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                        <img class="img-fluid" src="~/assets/img/@Model.ImageFirst">
+                    </div>
+                    <div class="col-lg-6 mb-0 d-flex align-items-center">
+                        <div class="text-align-left align-self-center">
+                            <h1 class="h1 text-success">@Model.TitleFirst</h1>
+                            <h3 class="h2">@Model.DescriptionFirst</h3>
+                            <p>
+                                @Model.TextFirst
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <div class="row p-5">
+                    <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                        <img class="img-fluid" src="~/assets/img/@Model.ImageSecond">
+                    </div>
+                    <div class="col-lg-6 mb-0 d-flex align-items-center">
+                        <div class="text-align-left">
+                            <h1 class="h1 text-success">@Model.TitleSecond</h1>
+                            <h3 class="h2">@Model.DescriptionSecond</h3>
+                            <p>
+                                @Model.TextSecond
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <div class="row p-5">
+                    <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                        <img class="img-fluid" src="~/assets/img/@Model.ImageThird" alt="">
+                    </div>
+                    <div class="col-lg-6 mb-0 d-flex align-items-center">
+                        <div class="text-align-left">
+                            <h1 class="h1 text-success">@Model.TitleThird</h1>
+                            <h3 class="h2">@Model.DescriptionThird</h3>
+                            <p>
+                               @Model.TextThird
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="prev">
+        <i class="fas fa-chevron-left"></i>
+    </a>
+    <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="next">
+        <i class="fas fa-chevron-right"></i>
+    </a>
+</div>
+<!-- End Banner Hero -->
+<!-- Start Categories of The Month -->
+<section class="container py-5">
+    <div class="row text-center pt-3">
+        <div class="col-lg-6 m-auto">
+            <h1 class="h1">Your Gateway to Prime Satellite Connectivity</h1>
+            <p>
+                Start exploring now
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-4 p-5 mt-3">
+            <a href="#"><img src="./assets/img/pexels-sonic-12102914.jpg" class="rounded-circle img-fluid border"></a>
+            <h5 class="text-center mt-3 mb-3">Earth Station</h5>
+        </div>
+        <div class="col-12 col-md-4 p-5 mt-3">
+            <a href="#"><img src="./assets/img/pexels-pixabay-33153.jpg" class="rounded-circle img-fluid border"></a>
+            <h2 class="h5 text-center mt-3 mb-3">Occasional Use</h2>
+        </div>
+        <div class="col-12 col-md-4 p-5 mt-3">
+            <a href="#"><img src="./assets/img/pexels-miguel-á-padriñán-579471.jpg" class="rounded-circle img-fluid border"></a>
+            <h2 class="h5 text-center mt-3 mb-3">Channel List</h2>
+        </div>
+    </div>
+</section>
+<!-- End Categories of The Month -->
+<!-- Start Features -->
+<section id="features" class="features">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Features</h2>
+            <p>Check our Features</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3">
+                <ul class="nav nav-tabs flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Services & Solution</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Satellite Fleet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Azconnexus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Azercosmos Excellence</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-9 mt-4 mt-lg-0">
+                <div class="tab-content">
+                    <div class="tab-pane active show" id="tab-1">
+                        <div class="row">
+                            <div class="col-lg-8 details order-2 order-lg-1">
+                                <h3>Services</h3>
+                                <p class="fst-italic">We deliver high-quality and secure satellite connectivity, offering video, data, and teleport services and solutions to our partners in Africa, the Middle East, Europe, Central and South Asia. We strive to enhance the services provided and enter new markets, keeping customized excellence at the heart of everything we do.</p>
+                            </div>
+                            <div class="col-lg-4 text-center order-1 order-lg-2">
+                                <img src="~/assets/img/download (11).jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab-2">
+                        <div class="row">
+                            <div class="col-lg-8 details order-2 order-lg-1">
+                                <h3>Telecommunication</h3>
+                                <p class="fst-italic">Our telecommunication satellites Azerspace-1, located at 46 degrees East, and Azerspace-2, located at 45.1 degrees East, provide satellite video & data services to millions of households around the world.</p>
+                            </div>
+                            <div class="col-lg-4 text-center order-1 order-lg-2">
+                                <img src="~/assets/img/download (12).jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab-3">
+                        <div class="row">
+                            <div class="col-lg-8 details order-2 order-lg-1">
+                                <h3>Benefits</h3>
+                                <p class="fst-italic">Azconnexus enables the use of affordable Internet services and provides access to the cyberspace in remote and rural areas. It offers fast Internet connectivity and is a perfect solution for digital communication challenges at your locality.</p>
+                            </div>
+                            <div class="col-lg-4 text-center order-1 order-lg-2">
+                                <img src="~/assets/img/download (13).jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab-4">
+                        <div class="row">
+                            <div class="col-lg-8 details order-2 order-lg-1">
+                                <h3>Technical Quality</h3>
+                                <p class="fst-italic">At Azercosmos, we are committed to delivering high-quality and secure satellite connectivity to partners around the world. Emphasizing our first-class technical standards, exceptional service and customer-oriented personalisation of the solutions offered, we aim to provide you with outstanding experience and strive to create a better connected and developed world for future generations.</p>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- End Features -->

@@ -1,0 +1,92 @@
+﻿@model Slider
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container-fluid my-3 mx-3">
+    <div class="table-responsive pt-3">
+       
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>
+                        #
+                    </th>
+                    <th>
+                        Image
+                    </th>
+                    <th>
+                        Title
+                    </th>
+                    <th>
+                        Description
+                    </th>
+                    <th>
+                        Text
+                    </th>
+                    <th>
+                        Settings
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        <img src="~/assets/img/@Model.ImageFirst" />
+                    </td>
+                    <td>
+                        @Model.TitleFirst
+                    </td>
+                    <td>
+                        @Model.DescriptionFirst
+                    </td>
+                    <td>
+                        @Model.TextFirst
+                    </td>
+                   
+                </tr>
+                <tr>
+                    <td>
+                        2
+                    </td>
+                    <td>
+                        <img src="~/assets/img/@Model.ImageSecond" />
+                    </td>
+                    <td>
+                        @Model.TitleSecond
+                    </td>
+                    <td>
+                        @Model.DescriptionSecond
+                    </td>
+                    <td>
+                        @Model.TextSecond
+                    </td>
+                   
+                </tr>
+                <tr>
+                    <td>
+                        3
+                    </td>
+                    <td>
+                        <img src="~/assets/img/@Model.ImageThird" />
+                    </td>
+                    <td>
+                        @Model.TitleThird
+                    </td>
+                    <td>
+                        @Model.DescriptionThird
+                    </td>
+                    <td>
+                        @Model.TextThird
+                    </td>
+                   
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>

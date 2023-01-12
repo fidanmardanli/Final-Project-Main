@@ -1,0 +1,165 @@
+﻿@model Portfolio
+
+@{
+    ViewData["Title"] = "Portfolio";
+    Layout = "~/Views/Shared/_ContactLayout.cshtml";
+}
+<!-- Start Portfolio -->
+<main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      
+    </section><!-- End Breadcrumbs -->
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <ul id="portfolio-flters">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".filter-app">Nebulas</li>
+                        <li data-filter=".filter-card">Earth</li>
+                        <li data-filter=".filter-web">Moon</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row portfolio-container">
+               @* //pexels-david-kopacz-4994765.jpg*@
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/@Model.ImageFirst" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Nebulas </h4>
+                            <p>Nebula</p>
+                            <div class="portfolio-links">
+                                <a href="~/assets//img/pexels-david-kopacz-4994765.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/@Model.ImageSecond" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Moon</h4>
+                            <p>Moon</p>
+                            <div class="portfolio-links">
+                                <a href="~/assets//img/pexels-tom-fisk-12519335.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets//img/@Model.ImageThird" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Nebula</h4>
+                            <p>Nebula</p>
+                            <div class="portfolio-links">
+                                <a href="~/assets//img/pexels-quentin-pelletier-6641536.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets//img/@Model.ImageFourth" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Earth</h4>
+                            <p>Earth</p>
+                            <div class="portfolio-links">
+                                <a href="~/assets//img/pexels-pixabay-45208.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/@Model.ImageFifth" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Moon</h4>
+                            <p>Moon</p>
+                            <div class="portfolio-links">
+                                <a href="~/assets//img/pexels-tom-fisk-12674365.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets//img/@Model.ImageSixth" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Nebula</h4>
+                            <p>Nebula</p>
+                            <div class="portfolio-links">
+                                <a href="~/assets//img/pexels-ingrid-north-14396590.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets//img/@Model.ImageSeventh" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Earth</h4>
+                            <p>Earth</p>
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/pexels-anang-santoso-4826567.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets//img/@Model.ImageEighth" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Earth</h4>
+                            <p>Earth</p>
+                            <div class="portfolio-links">
+                                <a href="~/assets//img/pexels-pixabay-355935.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/@Model.ImageNinth" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Moon</h4>
+                            <p>Moon</p>
+                            <div class="portfolio-links">
+                                <a href="~/assets//img/pexels-tom-fisk-12719813.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Portfolio Section -->
+
+</main>
+<!-- End Portfolio-->
+

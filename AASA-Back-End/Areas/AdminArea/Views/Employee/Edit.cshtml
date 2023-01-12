@@ -1,0 +1,27 @@
+﻿@model Employee
+
+
+<div class="container-fluid mx-5 my-3">
+    <h3>Employee</h3>
+    <form asp-action="Edit" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+
+            <label for="Fullname">Fullname</label>
+            <input class="form-control" asp-for="FullName">
+            <span class="text-danger" asp-validation-for="FullName"></span>
+
+            <label for="Name">Name</label>
+            <input class="form-control" asp-for="Position">
+            <span class="text-danger" asp-validation-for="Position"> </span>
+
+            <label for="Age">Age</label>
+            <input type="number" class="form-control" asp-for="Age">
+            <span class="text-danger" asp-validation-for="Age"></span>
+
+
+        </div>
+        <a class="btn btn-primary" asp-controller="Employee" asp-action="Index">Back</a>
+        <button type="submit" class="btn btn-primary">Edit</button>
+    </form>
+</div>
+
